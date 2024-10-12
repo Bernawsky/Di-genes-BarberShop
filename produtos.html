@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body id="body-produtos">
+
+    <header>
+        <div class="img-logo">
+            <a href="#topo">
+                <img id="logo-1" src="img/LOGO 1.png" alt="Logo da Diógenes">
+            </a>
+        </div>
+
+        <i onclick="abrir()" id="open" class="fa-solid fa-bars"></i>
+        <i onclick="fechar()" id="exit" class="fa-solid fa-xmark"></i>
+
+        <div class="container-header" id="menu">
+            <ul class="container-ul">
+                <li><a onclick="fecharLink()" id="tag-a" target="_blank" href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+        <div class="title">
+            <h1>Nossos Produtos</h1>
+            <p>Experimente os produtos premium da Diógenes BarberShop - pomadas, talcos, shampoos e muito mais. Descubra
+                uma experiência de cuidados pessoais incomparável. Venha nos visitar e eleve seu visual com qualidade e
+                sofisticação.
+            </p>
+        </div>
+
+        <div class="container-produtos">
+            <div class="produto">
+                <img src="img/1.png" alt="Condicionador" id="produto-1">
+
+                <div class="janela-modal" id="janela-modal-1">
+                    <div class="modal">
+                        <h3>Condicionador</h3><br>
+                        <p>O condicionador Baboon é ideal para desembaraçar, deixar os fios macios e auxiliar no combate
+                            ao frizz. Possui ativos que hidratam e ajudam os fios a reterem a umidade, deixando-os mais
+                            sedosos. Formulação com Óleo de Amêndoas e D-Pantenol que recuperam os fios, reduzem as
+                            pontas ressecadas e o volume. Promove maciez e brilho aos cabelos.
+                        </p><br>
+                        <button class="btn-fechar" id="fechar1"><i class="fa-solid fa-times"></i></button>
+                    </div>
+                </div>
+
+                <div class="container-descricao" id="container-descricao-1">
+                    <div class="pt1">
+                        <h2>Condicionador</h2>
+                        <span>140ML <button class="btn-more" id="abrir1">Ver mais</button></span>
+                        <span>R$: 50.90</span>
+                    </div>
+                    <div class="pt2">
+                        <div class="icons">
+                            <i onclick="eliminarItem(0)" id="menos" class="fa-solid fa-minus"></i>
+                            <span id="quantidade0">0</span>
+                            <i onclick="adicionarItem(0)" id="mais" class="fa-solid fa-plus"></i>
+                        </div>
+                        <span id="total0">R$: 0.00</span>
+                        <button id="finalizar1" onclick="finalizar0()">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="img/Shampoo2.png" alt="Shampoo" id="produto-2">
+
+                <div class="janela-modal" id="janela-modal-2">
+                    <div class="modal">
+                        <h3>Shampoo</h3><br>
+                        <p>Shampoo Formulado com refrescância e ingredientes suaves, limpa sem agredir, equilibrando o
+                            pH dos fios. Indicado para uso diário em todos os tipos de cabelos.
+                        </p><br>
+                        <button class="btn-fechar" id="fechar2"><i class="fa-solid fa-times"></i></button>
+                    </div>
+                </div>
+
+                <div class="container-descricao" id="container-descricao-2">
+                    <div class="pt1">
+                        <h2>Shampoo</h2>
+                        <span>240ML <button class="btn-more" id="abrir2">Ver mais</button></span>
+                        <span>R$: 60.00</span>
+                    </div>
+                    <div class="pt2">
+                        <div class="icons">
+                            <i onclick="eliminarItem(1)" id="menos" class="fa-solid fa-minus"></i>
+                            <span id="quantidade1">0</span>
+                            <i onclick="adicionarItem(1)" id="mais" class="fa-solid fa-plus"></i>
+                        </div>
+                        <span id="total1">R$: 0.00</span>
+                        <button onclick="finalizar1()">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="img/2.png" alt="Cream for men" id="produto-3">
+
+                <div class="janela-modal" id="janela-modal-3">
+                    <div class="modal">
+                        <h3>Cream for men</h3><br>
+                        <p>
+                            Toque ultra seco hidratação prolongada sem oleosidade! Tendo como grande diferencial o toque
+                            ultra seco, o Cream for Men da Baboon hidrata sem deixar a pele oleosa ou grudenta.
+                            Perfumado na medida certa, foi pensado para o homem que gosta de andar cheiroso, limpinho e
+                            bem cuidado. Mais que um cosmético, o Cream for Men trata a pele, uma vez que possuí
+                            componentes naturais como a Manteiga de Karité e o D-pantenol, ativos que proporcionam
+                            hidratação, renovação e ajudam a prevenir estrias, sinais de envelhecimento precoce, além de
+                            outras marcas indesejadas. O produto é dermatologicamente aprovado, e livre de testes em
+                            animais
+                        </p><br>
+                        <button class="btn-fechar" id="fechar3"><i class="fa-solid fa-times"></i></button>
+                    </div>
+                </div>
+
+                <div class="container-descricao" id="container-descricao-3">
+                    <div class="pt1">
+                        <h2>Cream for men</h2>
+                        <span>240ML <button  class="btn-more" id="abrir3">Ver mais</button></span>
+                        <span>R$: 64.90</span>
+                    </div>
+                    <div class="pt2">
+                        <div class="icons">
+                            <i onclick="eliminarItem(2)" id="menos" class="fa-solid fa-minus"></i>
+                            <span id="quantidade2">0</span>
+                            <i onclick="adicionarItem(2)" id="mais" class="fa-solid fa-plus"></i>
+                        </div>
+                        <span id="total2">R$: 0.00</span>
+                        <button onclick="finalizar2()">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="img/3.png" alt="Tonic Baboon" id="produto-4">
+
+                <div class="janela-modal" id="janela-modal-4">
+                    <div class="modal">
+                        <h3>Tonic Baboon</h3><br>
+                        <p>Eficácia comprovada em laboratório! Cresce cabelo, barba e bigode. Com a eficácia comprovada
+                            através rigorosos testes de laboratório, o Tônico Baboon age estimulando o crescimento dos
+                            fios do cabelo, barba e bigode, além de combater a queda, fortalecer a estrutura capilar e
+                            preencher as falhas. Ideal para evitar e tratar condições como a calvície, falta de volume e
+                            a tão temida careca, o Tônico Baboon ainda é garantia de controle da oleosidade, fios mais
+                            hidratados, saudáveis e alinhados. Tendo uma fórmula inovadora a base de Cafeína Anidra,
+                            Musap, Pantenol, Biotina e H-VIT PLUS, o tônico aumenta a microcirculação no couro cabeludo,
+                            o que melhora a distribuição de nutrientes entre os fios, fortalece a raiz e repara danos.
+                            Tudo isso sem nenhuma contraindicação ou efeito colateral!
+                        </p><br>
+                        <button  class="btn-fechar" id="fechar4"><i class="fa-solid fa-times"></i></button>
+                    </div>
+                </div>
+
+                <div class="container-descricao" id="container-descricao-4">
+                    <div class="pt1">
+                        <h2>Tonic Baboon </h2>
+                        <span>30ML <button  class="btn-more" id="abrir4">Ver mais</button></span>
+                        <span>R$: 90.00</span>
+                    </div>
+                    <div class="pt2">
+                        <div class="icons">
+                            <i onclick="eliminarItem(3)" id="menos" class="fa-solid fa-minus"></i>
+                            <span id="quantidade3">0</span>
+                            <i onclick="adicionarItem(3)" id="mais" class="fa-solid fa-plus"></i>
+                        </div>
+                        <span id="total3">R$: 0.00</span>
+                        <button onclick="finalizar3()">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="img/baboon.png" alt="Cement Effect" id="produto-5">
+
+                <div class="janela-modal" id="janela-modal-5">
+                    <div class="modal">
+                        <h3>Cement Effect</h3><br>
+                        <p>A Pomada Cement Effect Baboon proporciona alta definição e fixação, além de evidenciar o
+                            brilho dos fios, sem deixar resíduos. Enriquecida com óleo de Pracaxi, rico em vitaminas e
+                            ácidos graxos, trata, oferecendo efeito duradouro, praticidade e estilo.
+                        </p><br>
+                        <button  class="btn-fechar" id="fechar5"><i class="fa-solid fa-times"></i></button>
+                    </div>
+                </div>
+
+                <div class="container-descricao" id="container-descricao-5">
+                    <div class="pt1">
+                        <h2>Cement Effect</h2>
+                        <span>80G <button  class="btn-more" id="abrir5">Ver mais</button></span>
+                        <span>R$: 66.90</span>
+                    </div>
+                    <div class="pt2">
+                        <div class="icons">
+                            <i onclick="eliminarItem(4)" id="menos" class="fa-solid fa-minus"></i>
+                            <span id="quantidade4">0</span>
+                            <i onclick="adicionarItem(4)" id="mais" class="fa-solid fa-plus"></i>
+                        </div>
+                        <span id="total4">R$: 0.00</span>
+                        <button onclick="finalizar4()">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="img/Grooming_2021_web-1-e1618325179585.png" alt="Baboon Grooming" id="produto-6">
+
+                <div class="janela-modal" id="janela-modal-6">
+                    <div class="modal">
+                        <h3>Baboon Grooming</h3><br>
+                        <p>Ideal para proporcionar volume e textura aos cabelos. Fórmula condicionante, com pró vitamina
+                            B5, que nutre os fios enquanto estiliza. Ideal para utilizar juntamente com o secador de
+                            cabelos para obter textura e aspecto natural.
+                        </p><br>
+                        <button  class="btn-fechar" id="fechar6"><i class="fa-solid fa-times"></i></button>
+                    </div>
+                </div>
+
+                <div class="container-descricao" id="container-descricao-6">
+                    <div class="pt1">
+                        <h2>Baboon Grooming</h2>
+                        <span>240ML <button  class="btn-more" id="abrir6">Ver mais</button></span>
+                        <span>R$: 62.35</span>
+                    </div>
+                    <div class="pt2">
+                        <div class="icons">
+                            <i onclick="eliminarItem(5)" id="menos" class="fa-solid fa-minus"></i>
+                            <span id="quantidade5">0</span>
+                            <i onclick="adicionarItem(5)" id="mais" class="fa-solid fa-plus"></i>
+                        </div>
+                        <span id="total5">R$: 0.00</span>
+                        <button onclick="finalizar5()">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="img/kit-baboon-v3.png" alt="Kit Controle de Volume" id="produto-7">
+
+                <div class="janela-modal" id="janela-modal-7">
+                    <div class="modal">
+                        <h3>Kit Controle de Volume</h3><br>
+                        <p>O Kit Volume Control da Baboon é formado por um shampoo anti-resíduos e um redutor de volume.
+                            O SHAMPOO ANTI-RESÍDUOS BABOON abre as escamas dos fios retirando todas as impurezas. Contém
+                            em sua fórmula óleo de semente de uva e Manteiga de Karité. O REDUTOR DE VOLUME BABOON
+                            proporciona aos fios um resultado de nutrição e redução de volume intensa já na primeira
+                            aplicação. Contém em sua composição o Blend de aminoácidos Max Control que transforma a
+                            estrutura capilar com segurança e eficácia!
+                        </p><br>
+                        <button  class="btn-fechar" id="fechar7"><i class="fa-solid fa-times"></i></button>
+                    </div>
+                </div>
+
+                <div class="container-descricao" id="container-descricao-7">
+                    <div class="pt1">
+                        <h2>Kit Controle de Volume</h2>
+                        <span>500ML <button  class="btn-more" id="abrir7">Ver mais</button></span>
+                        <span>R$: 90.00</span>
+                    </div>
+                    <div class="pt2">
+                        <div class="icons">
+                            <i onclick="eliminarItem(6)" id="menos" class="fa-solid fa-minus"></i>
+                            <span id="quantidade6">0</span>
+                            <i onclick="adicionarItem(6)" id="mais" class="fa-solid fa-plus"></i>
+                        </div>
+                        <span id="total6">R$: 0.00</span>
+                        <button onclick="finalizar6()">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="img/Layer-13-1.png" alt="Leave-in" id="produto-8">
+
+                <div class="janela-modal" id="janela-modal-8">
+                    <div class="modal">
+                        <h3>Leave-in</h3><br>
+                        <p>O Leave-in para Pentear Baboon é ideal para finalização do seu penteado. Com ativos naturais
+                            em concentrações equilibradas para promover proteção térmica, hidratação, maciez e
+                            tratamento sem deixar os fios oleosos. Formulação com silicones especiais para promover
+                            proteção térmica contra calor do secador ou chapinha. Enriquecida com óleos e extratos
+                            vegetais que promovem hidratação, efeito antioxidante e nutrição aos fios. E ainda em sua
+                            composição há queratina para promover recuperação dos fios danificados por processos
+                            químicos e físicos.
+                        </p><br>
+                        <button  class="btn-fechar" id="fechar8"><i class="fa-solid fa-times"></i></button>
+                    </div>
+                </div>
+
+                <div class="container-descricao" id="container-descricao-8">
+                    <div class="pt1">
+                        <h2>Leave-in</h2>
+                        <span>240ML <button  class="btn-more" id="abrir8">Ver mais</button></span>
+                        <span>R$: 74.90</span>
+                    </div>
+                    <div class="pt2">
+                        <div class="icons">
+                            <i onclick="eliminarItem(7)" id="menos" class="fa-solid fa-minus "></i>
+                            <span id="quantidade7">0</span>
+                            <i onclick="adicionarItem(7)" id="mais" class="fa-solid fa-plus"></i>
+                        </div>
+                        <span id="total7">R$: 0.00</span>
+                        <button onclick="finalizar7()">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="img/Layer-133-2.png" alt="Pomada em Pó" id="produto-9">
+
+                <div class="janela-modal" id="janela-modal-9">
+                    <div class="modal">
+                        <h3>Pomada em Pó</h3><br>
+                        <p>Muito mais prático e com uma ação de fixação mais direta do que as pomadas tradicionais! A
+                            pomada em pó da Baboon vem para facilitar o seu penteado e te permitir chegar ao estilo que
+                            você desejar sem complicar em nada a cabeleira!
+                        </p><br>
+                        <button  class="btn-fechar" id="fechar9"><i class="fa-solid fa-times"></i></button>
+                    </div>
+                </div>
+
+                <div class="container-descricao" id="container-descricao-9">
+                    <div class="pt1">
+                        <h2>Pomada em Pó</h2>
+                        <span>15G <button  class="btn-more" id="abrir9">Ver mais</button></span>
+                        <span>R$: 80.00</span>
+                    </div>
+                    <div class="pt2">
+                        <div class="icons">
+                            <i onclick="eliminarItem(8)" id="menos" class="fa-solid fa-minus"></i>
+                            <span id="quantidade8">0</span>
+                            <i onclick="adicionarItem(8)" id="mais" class="fa-solid fa-plus"></i>
+                        </div>
+                        <span id="total8">R$: 0.00</span>
+                        <button onclick="finalizar8()">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="img/produto-balm.png" alt="Balm" id="produto-10">
+
+                <div class="janela-modal" id="janela-modal-10">
+                    <div class="modal">
+                        <h3>Balm</h3><br>
+                        <p>O Balm Cremoso Baboon vai deixar os fios hidratados e a pele macia, sem ficar oleosa. Ele é
+                            enriquecido com um complexo de extratos vegetais, biotina, pantenol e mentol, que atua no
+                            reparo da barreira cutânea e na redução de oleosidade enquanto acalma a pele.
+                        </p><br>
+                        <button  class="btn-fechar" id="fechar10"><i class="fa-solid fa-times"></i></button>
+                    </div>
+                </div>
+
+                <div class="container-descricao" id="container-descricao-10">
+                    <div class="pt1">
+                        <h2>Balm</h2>
+                        <span>240ML <button  class="btn-more" id="abrir10">Ver mais</button></span>
+                        <span>R$: 38.90</span>
+                    </div>
+                    <div class="pt2">
+                        <div class="icons">
+                            <i onclick="eliminarItem(9)" id="menos" class="fa-solid fa-minus"></i>
+                            <span id="quantidade9">0</span>
+                            <i onclick="adicionarItem(9)" class="fa-solid fa-plus"></i>
+                        </div>
+                        <span id="total9">R$: 0.00</span>
+                        <button onclick="finalizar9()">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="img/produto-clay-pomade.png" alt="Pomada Matte" id="produto-11">
+
+                <div class="janela-modal" id="janela-modal-11">
+                    <div class="modal">
+                        <h3>Pomada Matte</h3><br>
+                        <p>Pomada de efeito matte e excelente fixação. Conta com polímeros fixadores de alta performance
+                            juntamente com a força das ceras de abelhas e candelila. Ideal para penteados estruturados
+                            que requerem um efeito opaco.
+                        </p><br>
+                        <button  class="btn-fechar" id="fechar11"><i class="fa-solid fa-times"></i></button>
+                    </div>
+                </div>
+
+                <div class="container-descricao" id="container-descricao-11">
+                    <div class="pt1">
+                        <h2>Pomada Matte</h2>
+                        <span>80G <button  class="btn-more" id="abrir11">Ver mais</button></span>
+                        <span>R$: 68.70</span>
+                    </div>
+                    <div class="pt2">
+                        <div class="icons">
+                            <i onclick="eliminarItem(10)" id="menos" class="fa-solid fa-minus"></i>
+                            <span id="quantidade10">0</span>
+                            <i onclick="adicionarItem(10)" id="mais" class="fa-solid fa-plus"></i>
+                        </div>
+                        <span id="total10">R$: 79.80</span>
+                        <button onclick="finalizar10()">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="img/produto-hair-pomade.png" alt="Pomada De Fixação" id="produto-12">
+
+                <div class="janela-modal" id="janela-modal-12">
+                    <div class="modal">
+                        <h3>Pomada De Fixação</h3><br>
+                        <p>Pomada capilar de alta fixação e brilho, ideal para penteados clássicos que exigem efeito
+                            molhado. De fácil aplicação e espalhabilidade, a pomada Heavy Hold sai fácil com água sem
+                            deixar resíduos.
+                        </p><br>
+                        <button  class="btn-fechar" id="fechar12"><i class="fa-solid fa-times"></i></button>
+                    </div>
+                </div>
+
+                <div class="container-descricao" id="container-descricao-12">
+                    <div class="pt1">
+                        <h2>Pomada De Fixação</h2>
+                        <span>80G <button  class="btn-more" id="abrir12">Ver mais</button></span>
+                        <span>R$: 70.00</span>
+                    </div>
+                    <div class="pt2">
+                        <div class="icons">
+                            <i onclick="eliminarItem(11)" id="menos" class="fa-solid fa-minus"></i>
+                            <span id="quantidade11">0</span>
+                            <i onclick="adicionarItem(11)" id="mais" class="fa-solid fa-plus"></i>
+                        </div>
+                        <span id="total11">R$: 0.00</span>
+                        <button onclick="finalizar11()">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="img/produto-oleo.png" alt="Óleo para Barba" id="produto-13">
+
+                <div class="janela-modal" id="janela-modal-13">
+                    <div class="modal">
+                        <h3>Óleo para Barba</h3><br>
+                        <p>O Óleo para Barba Baboon vai tornar sua barba hidratada, forte, saudável e cheirosa. Sua
+                            fórmula com Óleo de Argan, Coco, Oliva, Girassol, Semi di Lino, Abacate e Macadâmia vai dar
+                            um tratamento especial aos fios da sua barba. Contém o Óleo de Melaleuca (TEA TREE), com
+                            propriedades antissépticas, antifúngicas, parasiticidas, germicidas, antibacterianas e
+                            anti-inflamatórias.
+                        </p><br>
+                        <button  class="btn-fechar" id="fechar13"><i class="fa-solid fa-times"></i></button>
+                    </div>
+                </div>
+
+                <div class="container-descricao" id="container-descricao-13">
+                    <div class="pt1">
+                        <h2>Óleo para Barba</h2>
+                        <span>30ML <button  class="btn-more" id="abrir13">Ver mais</button></span>
+                        <span>R$: 80.00</span>
+                    </div>
+                    <div class="pt2">
+                        <div class="icons">
+                            <i onclick="eliminarItem(12)" id="menos" class="fa-solid fa-minus"></i>
+                            <span id="quantidade12">0</span>
+                            <i onclick="adicionarItem(12)" id="mais" class="fa-solid fa-plus"></i>
+                        </div>
+                        <span id="total12">R$: 0.00</span>
+                        <button onclick="finalizar12()">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="img/Shave.png" alt="Creme Shave" id="produto-14">
+
+                <div class="janela-modal" id="janela-modal-14">
+                    <div class="modal">
+                        <h3>Creme Shave</h3><br>
+                        <p>Fórmula rica em óleo de amêndoas, que hidrata os fios e auxilia no deslizar da lâmina. Contém
+                            uréia que ajuda a amolecer os fios, facilitando o barbear. Contém também ingredientes que
+                            auxiliam na recuperação da pele após o barbear.
+                        </p><br>
+                        <button  class="btn-fechar" id="fechar14"><i class="fa-solid fa-times"></i></button>
+                    </div>
+                </div>
+
+                <div class="container-descricao" id="container-descricao-14">
+                    <div class="pt1">
+                        <h2>Creme Shave</h2>
+                        <span>280ML <button  class="btn-more" id="abrir14">Ver mais</button></span>
+                        <span>R$: 64.90</span>
+                    </div>
+                    <div class="pt2">
+                        <div class="icons">
+                            <i onclick="eliminarItem(13)" id="menos" class="fa-solid fa-minus"></i>
+                            <span id="quantidade13">0</span>
+                            <i onclick="adicionarItem(13)" id="mais" class="fa-solid fa-plus"></i>
+                        </div>
+                        <span id="total13">R$: 0.00</span>
+                        <button onclick="finalizar13()">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="img/skinprotection.png" alt="Skin protection" id="produto-15">
+
+                <div class="janela-modal" id="janela-modal-15">
+                    <div class="modal">
+                        <h3>Skin protection</h3><br>
+                        <p>O Skin Protection Baboon é um Pós-Barba Efervescente que acalma a pele e alivia a irritação
+                            após o barbear. O seu efeito efervescente proporciona uma experiência única, altamente
+                            sensorial e muito refrescante. Contém Aloe Vera, Alantoína e mentol de ação suave,
+                            cicatrizante e anti-inflamatória. Promove uma hidratação profunda da pele e o fechamento dos
+                            poros. O Skin Protection Baboon é muito mais conforto ao barbear.
+                        </p><br>
+                        <button  class="btn-fechar" id="fechar15"><i class="fa-solid fa-times"></i></button>
+                    </div>
+                </div>
+
+                <div class="container-descricao" id="container-descricao-15">
+                    <div class="pt1">
+                        <h2>Skin protection</h2>
+                        <span>300ML <button  class="btn-more" id="abrir15">Ver mais</button></span>
+                        <span>R$: 82.90</span>
+                    </div>
+                    <div class="pt2">
+                        <div class="icons">
+                            <i onclick="eliminarItem(14)" id="menos" class="fa-solid fa-minus"></i>
+                            <span id="quantidade14">0</span>
+                            <i onclick="adicionarItem(14)" id="mais" class="fa-solid fa-plus"></i>
+                        </div>
+                        <span id="total14">R$: 0.00</span>
+                        <button onclick="finalizar14()">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="img/spray2.png" alt="Hair Spray" id="produto-16">
+
+                <div class="janela-modal" id="janela-modal-16">
+                    <div class="modal">
+                        <h3>Hair Spray</h3><br>
+                        <p>Spray fixador para finaizar seu penteado com um alto poder de fixação. Quase impossível o
+                            penteado não ficar super estiloso!
+                        </p><br>
+                        <button  class="btn-fechar" id="fechar16"><i class="fa-solid fa-times"></i></button>
+                    </div>
+                </div>
+
+                <div class="container-descricao" id="container-descricao-16">
+                    <div class="pt1">
+                        <h2>Hair Spray</h2>
+                        <span>75ML <button  class="btn-more" id="abrir16">Ver mais</button></span>
+                        <span>R$: 89.90</span>
+                    </div>
+                    <div class="pt2">
+                        <div class="icons">
+                            <i onclick="eliminarItem(15)" id="menos" class="fa-solid fa-minus"></i>
+                            <span id="quantidade15">0</span>
+                            <i onclick="adicionarItem(15)" id="mais" class="fa-solid fa-plus"></i>
+                        </div>
+                        <span id="total15">R$: 0.00</span>
+                        <button onclick="finalizar15()">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="products.js"></script>
+</body>
+
+</html>

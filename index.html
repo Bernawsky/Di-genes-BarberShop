@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diógenes BarberShop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="topo">
+    <div class="img-sobre">
+        <img id="img-fundo" src="img/line-services.jpg" alt="Foto de cortes de cabelo">
+    </div>
+
+    <header>
+        <div class="img-logo">
+            <a href="#topo">
+                <img id="logo-1" src="img/LOGO 1.png" alt="Logo da Diógenes">
+            </a>
+        </div>
+
+        <i onclick="abrir()" id="open" class="fa-solid fa-bars"></i>
+        <i onclick="fechar()" id="exit" class="fa-solid fa-xmark"></i>
+
+        <div class="container-header" id="menu">
+            <ul class="container-ul">
+                <li><a onclick="fecharLink()" id="tag-a" href="#sobre">Sobre</a></li>
+                <li><a onclick="fecharLink()" id="tag-a" href="#localizacao">Localização</a></li>
+                <li><a onclick="fecharLink()" id="tag-a" href="#trabalho">Serviços</a></li>
+                <li><a onclick="fecharLink()" id="tag-a" href="#agendamento">Agendamento</a></li>
+                <li><a onclick="fecharLink()" id="tag-a" target="_blank" href="produtos.html">Produtos</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+
+        <div class="logo">
+            <img id="logo" src="img/LOGO 2.png" alt="Logo da Diógenes BarberShop">
+        </div>
+
+        <div class="sobre" id="sobre">
+            <h1>Diógenes BarberShop</h1><br><br>
+            <p>Olá, eu sou o Gustavo, o criador da Diógenes BarberShop, onde a arte de cuidar dos cabelos e da barba se
+                torna uma experiência única! Em 2017, a Diógenes começou na minha casa, e desde então, estamos
+                construindo uma história de beleza e estilo. Quer descobrir mais sobre a nossa jornada? Clique em "Saiba
+                Mais" e venha fazer parte dessa incrível experiência conosco! Vamos transformar sua visita em um momento
+                inesquecível!
+            </p><br>
+
+            <button id="btn-sobre" class="btn-sobre">Ler Mais</button>
+        </div>
+    </section>
+
+    <section id="localizacao">
+        <div class="localizacao">
+            <h1>Localização</h1><br><br>
+            <div class="container-localizacao">
+                <p><i class="fa-solid fa-location-dot"></i><a id="location"
+                        href="https://maps.app.goo.gl/tME39SF4peDdjyG28">Rua Alfred catão, 272 - Lima Duarte</a></p><br>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7406.937126055848!2d-43.790939!3d-21.839455!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9f4aaccc995555%3A0xf4751c305414e292!2sR.%20Alfredo%20Cat%C3%A3o%2C%20272a%20-%20Centro%2C%20Lima%20Duarte%20-%20MG%2C%2036140-000!5e0!3m2!1sen!2sbr!4v1710829188044!5m2!1sen!2sbr"
+                    width="600" height="450">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="trabalho">
+        <div class="trabalho">
+            <h1>Serviços</h1><br><br>
+
+            <div class="container-trabalho" id="container-trabalho">
+                <div class="trabalhos" id="trabalho1">
+                    <svg fill="#fff" height="56" width="56" version="1.1" id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 508.343 508.343" xml:space="preserve">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g>
+                                <g>
+                                    <path
+                                        d="M397.05,80.533l-68.412-36.838c-1.434-0.768-2.33-2.261-2.33-3.891V21.619c0-6.707-3.021-12.902-8.311-17.033 c-5.274-4.122-12.058-5.564-18.526-3.925L195.057,26.756c-12.518,3.132-23.006,11.554-28.766,23.066l-0.845,1.69 c-4.011,8.038-12.237,13.056-21.461,13.099c-16.964,0.085-32.768,7.731-43.358,20.975L89.995,98.871 c-7.159,8.951-11.349,19.738-12.126,31.198l-6.647,99.772c-0.7,10.445,1.681,20.779,6.878,29.867l27.46,48.06 c3.012,45.397,13.5,88.704,46.131,119.68c6.622,6.289,13.747,11.904,21.018,17.186v55.177c0,4.71,3.814,8.533,8.533,8.533 s8.533-3.823,8.533-8.533v-43.213c0.981,0.657,1.971,1.314,2.953,1.971l7.885,5.308c3.234,2.193,6.391,4.523,9.54,6.844 c13.653,10.112,27.785,20.557,47.659,20.557c0.043,0,0.077-0.009,0.111-0.009c0.043,0,0.077,0.009,0.119,0.009 c19.874,0,33.997-10.445,47.659-20.557c3.149-2.321,6.306-4.651,9.54-6.844l8.201-5.513c0.947-0.631,1.92-1.289,2.867-1.929 v43.375c0,4.71,3.814,8.533,8.533,8.533c4.719,0,8.533-3.823,8.533-8.533v-55.177c7.279-5.282,14.404-10.897,21.018-17.186 c32.7-31.044,43.273-74.453,46.336-120.013l10.957-25.566c10.325-24.107,15.556-49.613,15.556-75.81v-58.223 C437.242,119.676,421.839,93.888,397.05,80.533z M394.805,269.41c0,3.166-0.026,6.332-0.051,9.506 c-0.017,1.357-0.051,2.645-0.077,3.968c-0.034,1.775-0.068,3.55-0.119,5.316c-0.043,1.476-0.102,2.901-0.145,4.343 c-0.068,1.792-0.137,3.584-0.222,5.376c-0.06,1.169-0.119,2.338-0.171,3.49c-2.432,43.759-11.546,85.333-41.378,113.655 c-6.793,6.451-14.37,12.254-22.144,17.766c-0.188,0.12-0.41,0.179-0.589,0.307c-5.359,3.797-10.837,7.458-16.299,11.11 l-8.183,5.487c-3.43,2.33-6.767,4.804-10.103,7.27c-11.93,8.815-23.211,17.143-37.402,17.195 c-14.191-0.051-25.464-8.38-37.393-17.195c-3.337-2.466-6.682-4.941-10.103-7.27l-8.303-5.564 c-13.329-8.909-27.11-18.125-38.682-29.107c-28.74-27.281-37.905-65.877-40.721-104.713l-0.41-7.287 c-0.538-9.762-0.802-20.446-0.802-32.666l0.23-77.79c0-5.768,1.126-11.358,3.345-16.623c0.87-2.057,1.971-3.942,3.183-5.734 c0.358-0.538,0.759-1.041,1.143-1.545c0.956-1.263,1.98-2.449,3.098-3.558c0.452-0.461,0.905-0.93,1.374-1.348 c1.459-1.314,3.012-2.517,4.668-3.575c0.154-0.102,0.273-0.222,0.427-0.307c1.818-1.126,3.755-2.057,5.76-2.867 c0.589-0.247,1.212-0.435,1.826-0.648c1.485-0.521,3.012-0.956,4.574-1.306c0.691-0.145,1.374-0.307,2.074-0.427 c1.843-0.307,3.721-0.486,5.623-0.546c0.367-0.008,0.725-0.068,1.092-0.068c1.468-0.009,2.961,0.213,4.454,0.358 c1.033,0.102,2.057,0.094,3.098,0.265c2.517,0.435,5.052,1.092,7.552,2.005c13.013,4.702,38.025,10.325,83.243,10.325 c45.227,0,70.238-5.623,83.251-10.325c20.343-7.364,42.249,1.126,49.937,19.302c2.227,5.265,3.345,10.854,3.345,16.623V269.41z">
+                                    </path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <h2>CORTE DO CABELO</h2><br>
+                    <p>O corte de cabelo é analisado por um visagista,
+                        de acordo com seu formato de rosto, e também com a imagem que você deseja passar!
+                    </p>
+                </div>
+
+                <div class="trabalhos" id="trabalho2">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="56" height="56"
+                        viewBox="0 0 1280.000000 640.000000" preserveAspectRatio="xMidYMid meet">
+                        <metadata>
+                            Created by potrace 1.15, written by Peter Selinger 2001-2017
+                        </metadata>
+                        <g transform="translate(0.000000,640.000000) scale(0.100000,-0.100000)" fill="#fff"
+                            stroke="none">
+                            <path d="M5065 4954 c-277 -32 -403 -60 -615 -136 -197 -71 -456 -222 -660
+                                -384 -176 -140 -451 -430 -770 -809 -395 -470 -612 -682 -853 -831 -222 -138
+                                -443 -221 -717 -271 -141 -25 -421 -23 -556 5 -258 52 -417 140 -480 264 -76
+                                150 -70 337 15 461 61 89 186 167 267 167 85 0 149 -79 180 -222 10 -43 22
+                                -78 27 -78 18 0 0 209 -24 285 -77 248 -256 300 -547 159 -157 -76 -253 -197
+                                -304 -381 -28 -101 -30 -338 -4 -451 112 -501 487 -885 1077 -1105 617 -231
+                                1395 -245 2479 -46 282 52 463 96 695 170 656 210 1291 540 1743 906 115 93
+                                283 261 337 336 22 31 43 56 46 57 3 0 22 -24 43 -54 48 -70 247 -266 366
+                                -361 527 -420 1357 -815 2065 -984 270 -64 747 -143 1055 -175 607 -63 1139
+                                -36 1552 80 709 198 1168 616 1294 1176 26 113 24 350 -4 451 -51 184 -147
+                                305 -304 381 -122 59 -203 80 -293 74 -79 -5 -116 -21 -164 -70 -70 -71 -109
+                                -184 -118 -340 -7 -129 6 -142 31 -30 42 195 136 261 276 196 230 -107 308
+                                -373 179 -615 -89 -167 -382 -272 -759 -273 -353 0 -675 94 -989 289 -221 137
+                                -468 376 -821 795 -536 636 -788 875 -1131 1072 -524 302 -1174 381 -1664 201
+                                -197 -73 -364 -183 -515 -340 l-100 -103 -100 103 c-282 293 -656 441 -1100
+                                435 -58 0 -118 -3 -135 -4z" />
+                        </g>
+                    </svg>
+                    <h2>CORTE DA BARBA</h2><br>
+                    <p>O corte da barba é analisado por um visagista,
+                        de acordo com seu formato de rosto, e também com a imagem que você deseja passar!
+                    </p>
+                </div>
+                <div class="trabalhos" id="trabalho3">
+                    <svg width="56" height="56" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <title>eyebrow_fill</title>
+                            <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Part" transform="translate(-192.000000, -48.000000)" fill-rule="nonzero">
+                                    <g id="eyebrow_fill" transform="translate(192.000000, 48.000000)">
+                                        <path
+                                            d="M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z"
+                                            id="MingCute" fill-rule="nonzero"> </path>
+                                        <path
+                                            d="M18.9372,9.36167 C20.6395,10.1301 22.108,11.2831 22.8998,12.9158 C23.0681,13.2628 23.0219,13.6757 22.781,13.9769 C22.5401,14.278 22.1474,14.4138 21.772,14.3258 C15.8145,12.93 9.78907,15.3311 6.61118,16.6414 C4.618,17.4633 2.68113,16.7923 1.68066,15.44 C1.18289,14.7672 0.915929,13.9186 1.02369,13.0307 C1.36416,10.2254 4.88953,9.02468 7.21626,8.49728 C10.9972,7.64025 15.3643,7.74879 18.9372,9.36167 Z"
+                                            id="路径" fill="#ffffff"> </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <h2>APARO DA SOBRANCELHA</h2><br>
+                    <p>O corte da sobrancelha é analisado por um visagista,
+                        de acordo com seu formato de rosto, e também com a imagem que você deseja passar!
+                    </p>
+                </div>
+
+                <div class="trabalhos" id="trabalho4">
+                    <div class="container-icons">
+                        <svg height="56" width="56" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"
+                            fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <style type="text/css">
+                                    .st0 {
+                                        display: flex;
+                                        fill: #ffff;
+                                    }
+                                </style>
+                                <g>
+                                    <path class="st0"
+                                        d="M467.93,173.644c-27.015-27.006-70.82-27.015-97.834,0c-13.376,13.368-20.106,30.828-20.253,48.353 c-0.016,2.956-0.016,4.606-1.078,7.268c-1.078,2.671-4.394,5.521-7.17,7.497c-18.93,13.443-36.112,20.433-51.106,23.536 c-1.469,24.172,9.065,38.513,9.588,39.199l2.075,2.613c14.781-6.533,35.458-14.512,53.245-22.956 c5.227-2.474,11.057-4.525,14.863-3.863c3.806,0.662,9.882,4.883,15.5,7.97c26.28,14.405,59.926,10.486,82.171-11.776 C494.944,244.472,494.944,200.666,467.93,173.644z M445.456,249.012c-14.602,14.602-38.284,14.602-52.886,0 c-14.618-14.602-14.618-38.285,0-52.886c14.602-14.602,38.284-14.602,52.886,0C460.057,210.727,460.057,234.411,445.456,249.012z">
+                                    </path>
+                                    <path class="st0"
+                                        d="M299.047,194.215c1.976-2.785,4.834-6.1,7.497-7.162c2.662-1.078,4.312-1.07,7.268-1.095 c17.509-0.146,34.985-6.884,48.346-20.244c27.014-27.023,27.014-70.819,0-97.843c-9.245-9.236-20.45-15.32-32.291-18.235 C328.218,17.82,318.091,0,318.091,0l-22.474,6.615c8.428,15.655,8.085,37.828,7.954,41.673 c-14.372,2.018-28.206,8.542-39.264,19.583c-22.246,22.254-26.165,55.9-11.76,82.18c3.087,5.619,7.301,11.694,7.971,15.5 c0.653,3.806-1.389,9.62-3.871,14.855c-12.168,25.651-23.406,57.369-30.674,68.606c0,0-162.643,189.078-182.471,214.206 c-19.828,25.12-23.797,37.01-15.86,44.948c7.922,7.938,19.828,3.969,44.948-15.86c25.12-19.844,214.206-182.471,214.206-182.471 S249.771,263.565,299.047,194.215z M286.797,90.346c14.602-14.602,38.268-14.602,52.887,0c14.602,14.61,14.602,38.292,0,52.887 c-14.618,14.609-38.285,14.609-52.887,0.007C272.18,128.638,272.18,104.956,286.797,90.346z M248.448,305.867 c-5.112,5.112-13.409,5.112-18.505,0c-5.112-5.112-5.112-13.394,0-18.506c5.096-5.112,13.393-5.112,18.505,0 S253.56,300.755,248.448,305.867z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <i style="color: #ffff;" class="fa-solid fa-plus"></i><!-- Sinal de mais -->
+
+                        <svg fill="#fff" height="56" width="56" version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 508.343 508.343" xml:space="preserve">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M397.05,80.533l-68.412-36.838c-1.434-0.768-2.33-2.261-2.33-3.891V21.619c0-6.707-3.021-12.902-8.311-17.033 c-5.274-4.122-12.058-5.564-18.526-3.925L195.057,26.756c-12.518,3.132-23.006,11.554-28.766,23.066l-0.845,1.69 c-4.011,8.038-12.237,13.056-21.461,13.099c-16.964,0.085-32.768,7.731-43.358,20.975L89.995,98.871 c-7.159,8.951-11.349,19.738-12.126,31.198l-6.647,99.772c-0.7,10.445,1.681,20.779,6.878,29.867l27.46,48.06 c3.012,45.397,13.5,88.704,46.131,119.68c6.622,6.289,13.747,11.904,21.018,17.186v55.177c0,4.71,3.814,8.533,8.533,8.533 s8.533-3.823,8.533-8.533v-43.213c0.981,0.657,1.971,1.314,2.953,1.971l7.885,5.308c3.234,2.193,6.391,4.523,9.54,6.844 c13.653,10.112,27.785,20.557,47.659,20.557c0.043,0,0.077-0.009,0.111-0.009c0.043,0,0.077,0.009,0.119,0.009 c19.874,0,33.997-10.445,47.659-20.557c3.149-2.321,6.306-4.651,9.54-6.844l8.201-5.513c0.947-0.631,1.92-1.289,2.867-1.929 v43.375c0,4.71,3.814,8.533,8.533,8.533c4.719,0,8.533-3.823,8.533-8.533v-55.177c7.279-5.282,14.404-10.897,21.018-17.186 c32.7-31.044,43.273-74.453,46.336-120.013l10.957-25.566c10.325-24.107,15.556-49.613,15.556-75.81v-58.223 C437.242,119.676,421.839,93.888,397.05,80.533z M394.805,269.41c0,3.166-0.026,6.332-0.051,9.506 c-0.017,1.357-0.051,2.645-0.077,3.968c-0.034,1.775-0.068,3.55-0.119,5.316c-0.043,1.476-0.102,2.901-0.145,4.343 c-0.068,1.792-0.137,3.584-0.222,5.376c-0.06,1.169-0.119,2.338-0.171,3.49c-2.432,43.759-11.546,85.333-41.378,113.655 c-6.793,6.451-14.37,12.254-22.144,17.766c-0.188,0.12-0.41,0.179-0.589,0.307c-5.359,3.797-10.837,7.458-16.299,11.11 l-8.183,5.487c-3.43,2.33-6.767,4.804-10.103,7.27c-11.93,8.815-23.211,17.143-37.402,17.195 c-14.191-0.051-25.464-8.38-37.393-17.195c-3.337-2.466-6.682-4.941-10.103-7.27l-8.303-5.564 c-13.329-8.909-27.11-18.125-38.682-29.107c-28.74-27.281-37.905-65.877-40.721-104.713l-0.41-7.287 c-0.538-9.762-0.802-20.446-0.802-32.666l0.23-77.79c0-5.768,1.126-11.358,3.345-16.623c0.87-2.057,1.971-3.942,3.183-5.734 c0.358-0.538,0.759-1.041,1.143-1.545c0.956-1.263,1.98-2.449,3.098-3.558c0.452-0.461,0.905-0.93,1.374-1.348 c1.459-1.314,3.012-2.517,4.668-3.575c0.154-0.102,0.273-0.222,0.427-0.307c1.818-1.126,3.755-2.057,5.76-2.867 c0.589-0.247,1.212-0.435,1.826-0.648c1.485-0.521,3.012-0.956,4.574-1.306c0.691-0.145,1.374-0.307,2.074-0.427 c1.843-0.307,3.721-0.486,5.623-0.546c0.367-0.008,0.725-0.068,1.092-0.068c1.468-0.009,2.961,0.213,4.454,0.358 c1.033,0.102,2.057,0.094,3.098,0.265c2.517,0.435,5.052,1.092,7.552,2.005c13.013,4.702,38.025,10.325,83.243,10.325 c45.227,0,70.238-5.623,83.251-10.325c20.343-7.364,42.249,1.126,49.937,19.302c2.227,5.265,3.345,10.854,3.345,16.623V269.41z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div><br><br>
+                    <h2>CORTE NA RESOURA</h2><br>
+                    <p>O corte da sobrancelha é analisado por um visagista,
+                        de acordo com seu formato de rosto, e também com a imagem que você deseja passar!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="agendamento">
+        <div class="center-agendamento">
+            <h1>Agendamento</h1><br><br>
+            <div class="app">
+                <h2>AGENDE NO APLICATIVO</h2><br><br>
+                <p>Agende seu próximo corte com apenas alguns cliques! Nosso aplicativo de agendamento está
+                    pronto para garantir que você consiga o horário perfeito na nossa barbearia. Baixe agora,
+                    e mantenha seu estilo sempre em dia. Faça parte da experiência.
+                </p><br>
+
+                <div class="btns">
+                    <button id="ios"><i class="fa-brands fa-apple"></i> App Store</button>
+                    <button id="android"><i class="fa-brands fa-google-play"></i> Google Play</button>
+                </div>
+            </div>
+
+            <div class="site">
+                <h2>AGENDE NO SITE</h2><br><br>
+                <p>
+                    Agende seu próximo corte com apenas alguns cliques! Nosso site de agendamento está pronto para
+                    garantir que você consiga o horário perfeito na nossa barbearia. Acesse agora,
+                    e mantenha seu estilo sempre em dia. Faça parte da experiência.
+                </p><br>
+
+                <button id="site" class="more"><i class="fa-solid fa-globe"></i> Saiba Mais</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-informacao">
+            <div class="inform-1">
+                <a>Cnpj: ......</a><br>
+                <a>Tell: +55 32 9844-59534</a><br>
+            </div>
+        </div>
+
+        <div class="redes">
+            <i id="whatsapp" class="fa-brands fa-whatsapp"></i>
+            <i id="instagram" class="fa-brands fa-instagram"></i>
+            <i id="facebook" class="fa-brands fa-facebook"></i>
+            <i id="threads" class="fa-brands fa-threads"></i>
+        </div>
+
+        <p id="copy">Copyright <i class="fa-regular fa-copyright"></i> Diógenes Barber Shop</p>
+    </footer>
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/26a5060f7d.js" crossorigin="anonymous"></script>
+    <script src="scrip.js"></script>
+</body>
+
+</html>
